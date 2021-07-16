@@ -1,0 +1,326 @@
+ @import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap);
+
+ * {
+     margin: 0;
+     padding: 0;
+     scroll-behavior: smooth;
+ }
+
+ body {
+     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+ }
+
+ .hero {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100vh;
+     background-color: teal;
+     background-image: linear-gradient(teal, white);
+     overflow: hidden;
+ }
+
+ .left {
+     background-color: salmon;
+     width: 200px;
+     height: 300px;
+     position: absolute;
+     left: 200px;
+     top: 200px;
+     z-index: 1;
+ }
+
+ .mid {
+     width: 500px;
+     height: 200px;
+     background-color: rgb(247, 247, 151);
+     position: absolute;
+     top: 450px;
+     left: 350px;
+     z-index: 2;
+ }
+
+ .right {
+     background-color: skyblue;
+     width: 400px;
+     height: 400px;
+     position: absolute;
+     top: 100px;
+     right: 150px;
+     z-index: 4;
+ }
+
+ .title {
+     position: absolute;
+     font-size: 150px;
+     z-index: 99;
+     pointer-events: none;
+ }
+
+ .btn {
+     text-decoration: none;
+     display: inline-block;
+     padding: 20px;
+     background-color: blueviolet;
+     color: cadetblue;
+     border-radius: 40px;
+     transform: translateY(100px);
+     cursor: pointer;
+     font-weight: 700;
+     z-index: 20;
+ }
+
+ .container,
+ .description {
+     margin: 50px auto;
+     width: 60%;
+     line-height: 50px;
+
+ }
+
+ .container p,
+ .description p {
+     font-size: 20px;
+ }
+
+ .badan {
+     position: relative;
+ }
+
+ .kotak1 {
+     width: 100px;
+     height: 100px;
+     background-color: darkslateblue;
+     position: absolute;
+     top: 300px;
+     left: -100px;
+ }
+
+
+ .kotak2,
+ .kotak3,
+ .kotak4 {
+     width: 10px;
+     height: 130px;
+     background-color: indianred;
+     position: absolute;
+     top: 400px;
+     right: 100px;
+ }
+
+ .kotak3 {
+     right: 75px;
+     background-color: saddlebrown;
+ }
+
+ .kotak4 {
+     right: 125px;
+     background-color: teal;
+ }
+
+ .aquarium {
+     width: 100%;
+     height: 200px;
+     align-items: center;
+     background-image: linear-gradient(to right, teal, rgb(143, 189, 189));
+     display: flex;
+     overflow: hidden;
+ }
+
+ .ikan1 {
+     width: 200px;
+     height: 100px;
+     margin: 20px;
+     position: relative;
+     display: flex;
+ }
+
+
+ .ikan1 .kepala {
+     width: 100px;
+     height: 100px;
+     background-color: salmon;
+     border-radius: 0 100px 100px 0;
+     position: absolute;
+     right: 0;
+ }
+
+ .ikan1 .badan {
+     background-color: salmon;
+     width: 100px;
+     height: 50px;
+     position: absolute;
+     left: 40px;
+     top: 25px;
+
+ }
+
+ .ikan1 .ekor {
+     width: 10px;
+     height: 0;
+     border-top: 50px solid transparent;
+     border-left: 100px solid salmon;
+     border-bottom: 50px solid transparent;
+     position: absolute;
+     left: -10px;
+     top: 0px;
+ }
+
+ .ikan1 .mata {
+     width: 10px;
+     height: 10px;
+     border-radius: 100px;
+     background-color: black;
+     position: absolute;
+     right: 30px;
+     top: 20px;
+ }
+
+ .ikan1 .a2 {
+     background-color: lightcyan;
+ }
+
+ .ikan1 .aa2 {
+     border-left: 100px solid lightcyan;
+ }
+
+ .ikan1 .a3 {
+     background-color: slateblue;
+ }
+
+ .ikan1 .aa2 {
+     border-left: 100px solid lightcyan;
+ }
+
+ .ikan1 .aa3 {
+     border-left: 100px solid slateblue;
+ }
+
+
+ .kelompok {
+     width: 600px;
+     display: flex;
+     margin-left: -1000px;
+ }
+
+ footer {
+     background-color: teal;
+     padding: 20px;
+     display: grid;
+     grid-template-areas: 'contact href';
+     grid-template-columns: 60% 40%;
+ }
+
+ .contact {
+     grid-area: contact;
+     border-right: solid 2px black;
+ }
+
+ .contact h2 {
+     margin-bottom: 20px;
+ }
+
+ input {
+     margin-bottom: 20px;
+     padding: 5px;
+     width: 80%;
+     height: 30px;
+     border-radius: 12px;
+     border: solid 1px #fff;
+ }
+
+ button {
+     padding: 10px;
+     border-radius: 40px;
+     border: solid 1px black;
+     cursor: pointer;
+     background-color: rgb(1, 59, 59);
+     color: white;
+ }
+
+
+ .href {
+     grid-area: href;
+ }
+
+ h3 {
+     font-size: 20px;
+ }
+
+ ul li a {
+     text-decoration: none;
+     font-size: 20px;
+     color: salmon;
+     font-weight: 700;
+ }
+
+ ul li {
+     list-style: none;
+     text-align: right;
+     margin-top: 5px;
+ }
+
+ ul li a:hover {
+     border-bottom: solid 2px black;
+ }
+
+
+ .alert {
+     position: absolute;
+     height: 100vh;
+     z-index: 999;
+     width: 100%;
+     background-color: black;
+     background-color: rgba(0, 0, 0, .4);
+     display: none;
+
+ }
+
+ .window {
+     width: 30%;
+     margin: 100px auto;
+     background-color: white;
+     text-align: center;
+     padding: 20px;
+     z-index: 998;
+
+ }
+
+ .alert .window h3 {
+     margin-bottom: 20px;
+ }
+
+ .alert .window .closebtn {
+     float: right;
+     cursor: pointer;
+ }
+
+
+
+
+
+
+
+ @media only screen and (max-width: 1073px) {
+
+     /* For mobile phones: */
+     .title {
+         font-size: 60px;
+     }
+
+     .kotak1,
+     .kotak2,
+     .kotak3,
+     .kotak4 {
+         display: none;
+     }
+
+     .container,
+     .description {
+         width: 80%;
+     }
+
+ }
